@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<style>
+    .map-responsive{
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+    }
+    .map-responsive iframe{
+        box-shadow: 0 10px 20px black;
+        height: 75%;
+        width: 75%;
+        margin-top: 100px;
+        margin-left: 175px;
+        position: absolute;
+    }
+    body{
+        background-color: #FF8C00;
+    }
+    #heading1{
+        color: #FFFFFF;
+        font-size: 48px;
+        margin: 20px 0px 0px -50px;
+    }
+    #heading2{
+        color: #FFFFFF;
+        font-size: 32px;
+        margin: 50px 0px 50px 75px;
+    }
+    #banner{
+        background-color: #000000;
+        position: relative;
+        margin: 15px 10px 0px 10px;
+        padding: 20px 0px 10px 500px;
+        box-shadow: 0 10px 10px #000000;
+    }
+    #image{
+        margin: 0px 0px 0px 190px;
+        transform: scale(0.75);
+        border-color: black;
+        border-width: 20px;
+        border-style: solid;
+    }
+    #content{
+        font-size: 28px;
+        text-align: center;
+        margin-top: -5px;
+        margin-bottom: 20px;
+    }
+    #content2{
+        font-size: 28px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+</style>
+<html>
+    <head>
+        <title>Friendly Neighbourhood Ops</title>
+    </head>
+    <body>
+        <div id="banner">
+        <h1 id="heading1">Operation: Neighbourhood</h1>
+        <h2 id="heading2">The mission back home</h2>
+        </div>
+        <img id="image" src="https://discover.luxury/wp-content/uploads/2017/09/Social-Initiatives-Spearheaded-by-Luxury-Brands-feature-1024x581.jpg" alt="Social Initiatives: The Main Mission">
+        <p id="content">
+            Dear Agent, the importance of your assignment could not be stressed enough. We've been gathering
+            intel on a new, rising threat. This adversity threatens the peace and stability of society. You must,
+            along with others dedicated to the cause, overcome this challenge.
+        </p>
+
+        <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198740.8331908717!2d-77.15466120548828!3d38.893670812396714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2sWashington%2C%20DC%2C%20USA!5e0!3m2!1sen!2sin!4v1636186648085!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <p id="content">
+            As you can see above, there are numerous organisations that will provide you with the means to complete
+            the mission. 
+            We trust you, Agent. Now get out there.
+        </p>
+        <p id="content2"><a href="#">The Mission Directory</a></p>
+    </body>
+</html>
