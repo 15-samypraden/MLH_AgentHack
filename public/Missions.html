@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Altruistic Agent | Mission Directory</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-black">
+    <div class="bg-black">
+	<script src="index.js"></script>
+   
+  <h1 class="font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-yellow-400 to-red-600 items-center">
+  Your mission, if you choose to accept it, is
+  </h1>
+    
+    <div>
+  <button class="font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-yellow-400 to-red-600 items-center" type="randomMission" onclick="randomMission()">View your mission</button>
+  <input name="randomMission" id="randomMission">
+      <script>
+        var mission = Array("Volunteer at a soup kitchen", "Donate blood", "Clean up the seaside", "Teach underprivileged kids", "Voulunteer at the animal shelter",  "take part in a charity run", "Plant a tree");
+
+function randomMission() {
+  var randomMission = mission[Math.floor(Math.random() * mission.length)];
+  document.getElementById('randomMission').value = randomMission;
+}
+      </script>
+</div>
+</div>
+  </body>
+</html>
