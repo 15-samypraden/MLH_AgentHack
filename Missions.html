@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Altruistic Agent | Mission Directory</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<script src="index.js"></script>
+    Your mission, if you choose to accept it, is
+    <div>
+  <button type="randomMission" onclick="randomMission()">View your mission</button>
+  <input name="randomMission" id="randomMission">
+      <script>
+        var mission = Array("Volunteer at a soup kitchen", "Donate blood", "Clean up the seaside", "Teach underprivileged kids", "Voulunteer at the animal shelter", "Plant a tree");
+
+function randomMission() {
+  var randomMission = mission[Math.floor(Math.random() * mission.length)];
+  document.getElementById('randomMission').value = randomMission;
+}
+      </script>
+</div>
+  </body>
+</html>
